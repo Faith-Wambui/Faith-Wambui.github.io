@@ -374,7 +374,38 @@ h3 {
   text-decoration: none !important;  /* Keeps underline removed when hovered */
   color: black; /* Optional: Change color on hover */
 }
+.centered-container {
+  text-align: justify;
+}
 
+.soft-skills-list {
+  list-style-type: disc;
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.card-content about {
+  display: inline-block;
+  text-align: left;
+  max-width: 800px; /* Adjust this value as needed */
+}
+.about-container {
+  font-size: 16px; /* Adjust this value as needed */
+}
+
+.about-container h3 {
+  font-size: 24px; /* Adjust this value for the heading if needed */
+}
+
+.about-container p {
+  font-size: 16px; /* This ensures paragraphs also use the smaller font size */
+  font-weight: 400;
+}
+
+.about-container .flow-text {
+  font-size: 16px !important; /* This overrides the flow-text class if it's setting a larger font size */
+}
 .card {
   margin-bottom: 60px;
 }
@@ -595,7 +626,17 @@ small {
     line-height: 150%;
   }
 }
+@media only screen and (min-width: 360px) {
+  .about-container .flow-text {
+    font-size: 16px !important;
+  }
+}
 
+@media only screen and (min-width: 390px) {
+  .about-container .flow-text {
+    font-size: 16px !important;
+  }
+}
 @media (max-width: 992px) {
   main {
     padding-left: 0px;
