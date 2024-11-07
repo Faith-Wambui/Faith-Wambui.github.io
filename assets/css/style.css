@@ -600,7 +600,7 @@ a.hoverline:hover {
     text-align: left;
     font-weight: 300;
     font-size: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     color: #4a0e4e;
 }
 
@@ -625,7 +625,7 @@ a.hoverline:hover {
     background:#e6e6fa;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 0.7rem;
     border: 1px solid #4a0e4e;
 }
 .project-links {
