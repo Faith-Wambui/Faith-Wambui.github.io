@@ -575,16 +575,21 @@ a.hoverline:hover {
 }
 
 .project-image {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit:scale-down;
     /* Optional styling */
-    border-radius: 8px; /* Add rounded corners if desired */
+
+
+}
+.project-content {
+    flex: 1;
+    padding: 1.5rem;  /* Remove top/bottom padding, keep left/right */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.project-content {
-    flex: 1; /* Take up remaining space next to the image */
-}
 
 
 .project-card:hover {
@@ -600,12 +605,15 @@ a.hoverline:hover {
     text-align: left;
     font-weight: 300;
     font-size: 24px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
     color: #4a0e4e;
+    margin-top: 1rem;
+    
+
 }
 
 .project-description {
-    text-align: left;
+    text-align: justify;
     color:#333333;
     margin-bottom: 1.5rem;
     line-height: 200%;
@@ -617,31 +625,35 @@ a.hoverline:hover {
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .project-tag {
     background:#e6e6fa;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
-    font-size: 0.7rem;
+    font:Roboto;
+    font-size: 12px;
     border: 1px solid #4a0e4e;
 }
 .project-links {
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;;
     display: flex;
     gap: 1rem;
     justify-content: flex-start;
+    font:Roboto;
+    font-size: 14px;
 }
 
 .project-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
+    gap: 1rem;
+    padding:  0.5rem;
     background-color: #f5f5f5;
     border-radius: 4px;
     text-decoration: none;
