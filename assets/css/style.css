@@ -559,11 +559,13 @@ a.hoverline:hover {
 .project-card {
     background: white;
     border-radius: 10px;
-    overflow: hidden;
+    overflow:hidden;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     box-shadow: var(--card-shadow);
     border: 1px solid rgba(136, 176, 75, 0.2);
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     transition: transform 0.3s ease;
 }
 .project-card {
@@ -598,14 +600,14 @@ a.hoverline:hover {
     text-align: left;
     font-weight: 300;
     font-size: 24px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     color: #4a0e4e;
 }
 
 .project-description {
     text-align: left;
     color:#333333;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 200%;
     font:Roboto;
     font-family: sans-serif;
@@ -616,14 +618,14 @@ a.hoverline:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-tag {
     background:#e6e6fa;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
-    font-size: 0.8rem;
+    font-size: 12px;
     border: 1px solid #4a0e4e;
 }
 .project-links {
