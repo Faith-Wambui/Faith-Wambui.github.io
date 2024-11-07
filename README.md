@@ -1,5 +1,5 @@
 
-# Faith Wambui - Personal Portfolio
+# Faith Wambui - Resume Portfolio
 
 ### 👋 Hello!
 I'm Faith Wambui, a Data Analyst and Project Manager with a strong engineering background. My mission is to drive meaningful change through data-driven insights and strategic decision-making. Whether it's creating innovative tools for climate action or managing complex projects, I strive to leave a positive and lasting impact.
