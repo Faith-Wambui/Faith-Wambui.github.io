@@ -558,14 +558,14 @@ a.hoverline:hover {
 
 .project-card {
     background: white;
-    border-radius: 10px;
+    border-radius: 0px;
     overflow:hidden;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     box-shadow: var(--card-shadow);
     border: 1px solid rgba(136, 176, 75, 0.2);
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
     transition: transform 0.3s ease;
 }
 .project-card {
