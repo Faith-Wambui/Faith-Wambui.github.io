@@ -374,6 +374,36 @@ h3 {
   text-decoration: none !important;  /* Keeps underline removed when hovered */
   color: black; /* Optional: Change color on hover */
 }
+
+.card {
+  margin-bottom: 60px;
+}
+
+.card .role {
+  font-size: 1.25rem;
+  position: absolute;
+  right: 38px;
+  top: 35px;
+}
+
+.card li a {
+  margin-right: 0;
+  color: #333333;
+  border-bottom: 2px solid #8e44ad;
+}
+
+.card li a:hover {
+  color: #333;
+  font-weight: 500;
+}
+
+.card .card-content {
+  padding-bottom: 30px;
+}
+
+.card .card-content p {
+  padding: 5px 0 0;
+}
 .centered-container {
   text-align: justify;
 }
@@ -405,35 +435,6 @@ h3 {
 
 .about-container .flow-text {
   font-size: 16px !important; /* This overrides the flow-text class if it's setting a larger font size */
-}
-.card {
-  margin-bottom: 60px;
-}
-
-.card .role {
-  font-size: 1.25rem;
-  position: absolute;
-  right: 38px;
-  top: 35px;
-}
-
-.card li a {
-  margin-right: 0;
-  color: #333333;
-  border-bottom: 2px solid #8e44ad;
-}
-
-.card li a:hover {
-  color: #333;
-  font-weight: 500;
-}
-
-.card .card-content {
-  padding-bottom: 30px;
-}
-
-.card .card-content p {
-  padding: 5px 0 0;
 }
 
 .card h5 {
@@ -555,6 +556,105 @@ a.hoverline:hover {
   height: auto;
 }
 
+.project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(136, 176, 75, 0.2);
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+.project-card {
+    display: flex;
+    align-items: flex-start; /* Align content at the top */
+    gap: 8px; /* Optional: space between image and content */
+}
+
+.project-image {
+    width: 400px;
+    height: 400px;
+    object-fit:scale-down;
+    /* Optional styling */
+    border-radius: 8px; /* Add rounded corners if desired */
+}
+
+.project-content {
+    flex: 1; /* Take up remaining space next to the image */
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    text-align: left;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: #4a0e4e;
+}
+
+.project-description {
+    text-align: left;
+    color:#333333;
+    margin-bottom: 1rem;
+    line-height: 200%;
+    font:Roboto;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tag {
+    background:#e6e6fa;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #4a0e4e;
+}
+.project-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.project-link i {
+  font-size: 1.1rem;
+}
 .card.medium .card-image {
   height: 240px;
 }
@@ -637,6 +737,9 @@ small {
     font-size: 16px !important;
   }
 }
+
+/* Add more media queries as needed */
+
 @media (max-width: 992px) {
   main {
     padding-left: 0px;
