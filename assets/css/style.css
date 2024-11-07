@@ -645,8 +645,8 @@ a.hoverline:hover {
     display: flex;
     gap: 1rem;
     justify-content: flex-start;
-    font:Roboto;
-    font-size: 14px;
+    font: Roboto;
+    font-size: 12px;
 }
 
 .project-link {
