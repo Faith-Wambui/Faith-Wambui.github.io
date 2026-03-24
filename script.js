@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 250);
     });
+     
 
     // ===================================
     // FADE IN PAGE ON LOAD
@@ -255,4 +256,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    // ============================================================================
+    // === SCROLL TO TOP ===
+    // ============================================================================
+    /**
+     * Scrolls page to top when scroll-to-top button is clicked.
+     */
+
+    function initScrollToTop() {
+    const scrollTopBtn = document.getElementById('scrollTop');
+    
+    scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+    });
+    }
+
+    initScrollToTop();
 });
