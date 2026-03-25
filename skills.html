@@ -17,14 +17,11 @@
     <nav class="top-navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <!-- Light theme logo -->
                 <img src="assets/images/logo.png" alt="FW Logo" class="logo-image light-logo">
-                <!-- Dark theme logo -->
                 <img src="assets/images/dark_logo.png" alt="FW Logo" class="logo-image dark-logo">
                 <span class="logo-text">Faith Wambui | Portfolio</span>
             </div>
-              <!-- Nav Links -->
-        <div class="nav-links" id="navLinks">
+            <div class="nav-links" id="navLinks">
                 <ul class="quick-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
@@ -35,1259 +32,686 @@
                     <li><span class="current-page">Skills</span></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-             </div>
-            <!-- Right side: theme toggle + hamburger -->
+            </div>
             <div class="navbar-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
                 </button>
-
                 <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
-
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
         <div class="skills-page">
+
             <!-- Page Header -->
             <div class="page-header">
                 <h1 class="page-title">Skills & Expertise</h1>
                 <p class="page-subtitle">Technical capabilities and domain expertise across data, AI, climate, and project management</p>
             </div>
 
-            <!-- Skills Container -->
-            <div class="skills-container">
-                <!-- Data Competencies-->
-                <section id="data-competencies">
-                    <section class="skill-category">
-                        <div class="category-header">
-                            <div class="category-icon data-analytics">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h2 class="category-title">Data Competencies</h2>
+            <!-- Skills Grid of Cards -->
+            <div class="skills-cards-grid">
+
+                <!-- Card 1: Data Analysis & Visualization -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon data-analytics">
+                            <i class="fas fa-chart-line"></i>
                         </div>
+                        <h2 class="card-title">Data Analysis & Visualization</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fab fa-python skill-row-icon"></i>
+                                Python
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                        <!-- Analysis & Visualization -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Analysis & Visualization</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fab fa-python skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Python</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-database skill-row-icon"></i>
+                                SQL
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-database skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">SQL</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-file-excel skill-row-icon"></i>
+                                Excel
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-file-excel skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Excel</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-area-chart skill-row-icon"></i>
+                                Power BI
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-area-chart skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Power BI</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot "></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-chart-bar skill-row-icon"></i>
+                                Tableau
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-chart-bar skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Tableau</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-tachometer-alt skill-row-icon"></i>
+                                Dashboard Design
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-tachometer-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Dashboard Design</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-book-open skill-row-icon"></i>
+                                Data Storytelling
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+                    </ul>
+                </div>
 
-                            </div>
+                <!-- Card 2: Statistical & Research Methods -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon research">
+                            <i class="fas fa-flask"></i>
                         </div>
+                        <h2 class="card-title">Statistical & Research Methods</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-calculator skill-row-icon"></i>
+                                SPSS
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                        <!-- Statistical & Qualitative -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Statistical & Qualitative Tools</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-calculator skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">SPSS</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-chart-pie skill-row-icon"></i>
+                                STATA
+                            </span>
+                            <span class="skill-badge proficient">Proficient</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-chart-pie skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">STATA</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Proficient</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-file-code skill-row-icon"></i>
+                                NVivo
+                            </span>
+                            <span class="skill-badge proficient">Proficient</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-file-code skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">NVIVO</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Proficient</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-poll skill-row-icon"></i>
+                                Survey Design
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-mobile-alt skill-row-icon"></i>
+                                ODK & KOBO Collect
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-binoculars skill-row-icon"></i>
+                                Field Research
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-layer-group skill-row-icon"></i>
+                                Mixed Methods Research
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Data Governance & Ethics -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon governance">
+                            <i class="fas fa-shield-alt"></i>
                         </div>
+                        <h2 class="card-title">Data Governance & Ethics</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-sitemap skill-row-icon"></i>
+                                Governance Frameworks
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                        <!-- Research Methods -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Research Methods</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-poll skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Survey Design</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>       
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-balance-scale skill-row-icon"></i>
+                                Ethical AI
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-mobile-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">ODK & KOBO Collect</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-user-shield skill-row-icon"></i>
+                                Data Privacy
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                 <div class="skill-item">
-                                    <i class="fas fa-tablet-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Mobile Data Collection</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-clipboard-check skill-row-icon"></i>
+                                Data Standards
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                 <div class="skill-item">
-                                    <i class="fas fa-binoculars skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Field Research Methods</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-check-circle skill-row-icon"></i>
+                                Data Validation
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-layer-group skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Mixed Methods Research</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-broom skill-row-icon"></i>
+                                Data Cleaning
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-chart-line skill-row-icon"></i>
+                                Data Monitoring
+                            </span>
+                            <span class="skill-badge intermediate">Intermediate</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50%"></div></div>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Data Engineering & Architecture -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon engineering">
+                            <i class="fas fa-server"></i>
                         </div>
+                        <h2 class="card-title">Data Engineering & Architecture</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-stream skill-row-icon"></i>
+                                Data Pipelines
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                        <!-- Data Quality Management -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Data Quality Management</h3>
-                            <div class="skills-grid">
-                            
-                                <div class="skill-item">
-                                    <i class="fas fa-check-circle skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Validation</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-exchange-alt skill-row-icon"></i>
+                                ETL / ELT Processes
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-broom skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Cleaning</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-link skill-row-icon"></i>
+                                Data Integration
+                            </span>
+                            <span class="skill-badge intermediate">Intermediate</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-search skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Profiling</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-server skill-row-icon"></i>
+                                Database Design
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-chart-line skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Monitoring</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-tags skill-row-icon"></i>
+                                Metadata Management
+                            </span>
+                            <span class="skill-badge intermediate">Intermediate</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-cubes skill-row-icon"></i>
+                                Data Modelling
+                            </span>
+                            <span class="skill-badge intermediate">Intermediate</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-brain skill-row-icon"></i>
+                                Machine Learning
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+                    </ul>
+                </div>
+
+                <!-- Card 5: AI & Emerging Tech -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon ai-tech">
+                            <i class="fas fa-robot"></i>
                         </div>
+                        <h2 class="card-title">AI & Emerging Tech</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-wand-magic-sparkles skill-row-icon"></i>
+                                Generative AI
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                        <!-- Data Governance & Ethics -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Data Governance & Ethics</h3>
-                            <div class="skills-grid">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-plug skill-row-icon"></i>
+                                AI Integration
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-sitemap skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Governance Frameworks</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-comment skill-row-icon"></i>
+                                Prompt Engineering
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-balance-scale skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Ethical AI</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-microchip skill-row-icon"></i>
+                                AI-Powered Analytics
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-user-shield skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Privacy</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-gears skill-row-icon"></i>
+                                Automation with AI
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-clipboard-check skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Standards</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-lock skill-row-icon"></i>
+                                Cybersecurity
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-network-wired skill-row-icon"></i>
+                                Network Security
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+                    </ul>
+                </div>
+
+                <!-- Card 6: Development & Integration -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon development">
+                            <i class="fas fa-code"></i>
                         </div>
+                        <h2 class="card-title">Development & Integration</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-code-merge skill-row-icon"></i>
+                                API Integration
+                            </span>
+                            <span class="skill-badge beginner">Beginner</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="25%"></div></div>
 
-                        <!-- Data Architecture -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Data Architecture</h3>
-                            <div class="skills-grid">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fab fa-git-alt skill-row-icon"></i>
+                                Git / Version Control
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-server skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Database Design</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-globe skill-row-icon"></i>
+                                Website Development
+                            </span>
+                            <span class="skill-badge intermediate">Intermediate</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-tags skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Metadata Management</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Intermediate</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-key skill-row-icon"></i>
+                                Data Security
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-cubes skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Modelling</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-exclamation-triangle skill-row-icon"></i>
+                                Risk Management
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+                    </ul>
+                </div>
+
+                <!-- Card 7: Project Management -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon project-management">
+                            <i class="fas fa-tasks"></i>
                         </div>
+                        <h2 class="card-title">Project Management</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-project-diagram skill-row-icon"></i>
+                                MS Project
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                        <!-- Data Engineering -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Data Engineering</h3>
-                            <div class="skills-grid">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-check-circle skill-row-icon"></i>
+                                Asana
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-stream skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Pipelines</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-calendar-alt skill-row-icon"></i>
+                                Project Planning
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-exchange-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">ETL/ELT Processes</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-users-cog skill-row-icon"></i>
+                                Agile & Scrum
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-link skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Integration</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-flag-checkered skill-row-icon"></i>
+                                Product Development
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-clipboard-check skill-row-icon"></i>
+                                M&E Frameworks
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-tachometer-alt skill-row-icon"></i>
+                                KPI Tracking
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+                    </ul>
+                </div>
+
+                <!-- Card 8: Climate & Sustainability -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon sustainability">
+                            <i class="fas fa-leaf"></i>
                         </div>
+                        <h2 class="card-title">Climate & Sustainability</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-globe-africa skill-row-icon"></i>
+                                Climate Governance
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                        <!-- Advanced Analytics -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Advanced Analytics</h3>
-                            <div class="skills-grid">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-temperature-high skill-row-icon"></i>
+                                Climate Change Adaptation
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-brain skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Machine Learning</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-smog skill-row-icon"></i>
+                                Carbon Risk Assessment
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-book-open skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Storytelling</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-solar-panel skill-row-icon"></i>
+                                Renewable Energy
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-recycle skill-row-icon"></i>
+                                Circular Economy
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-file-contract skill-row-icon"></i>
+                                ESG Reporting
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-search skill-row-icon"></i>
+                                Environmental Auditing
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
+                    </ul>
+                </div>
+
+                <!-- Card 9: Leadership & Professional -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="card-icon leadership">
+                            <i class="fas fa-user-tie"></i>
                         </div>
-                        
-                    </section>
-                </section>
+                        <h2 class="card-title">Leadership & Professional</h2>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-crown skill-row-icon"></i>
+                                Leadership
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                    <!-- AI & Emerging Tech  -->
-                <section id="ai-technology">
-                    <section class="skill-category">
-                        <div class="category-header">
-                            <div class="category-icon technology-security">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <h2 class="category-title">AI & Emerging Tech</h2>
-                        </div>
-                        
-                        <!-- Cybersecurity & IT-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Cybersecurity & IT</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-lock skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Cybersecurity</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-chess skill-row-icon"></i>
+                                Strategic Planning
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-exclamation-triangle skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Risk Management</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-sync-alt skill-row-icon"></i>
+                                Change Management
+                            </span>
+                            <span class="skill-badge advanced">Advanced</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="75%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-network-wired skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Network Security</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-puzzle-piece skill-row-icon"></i>
+                                Critical Thinking
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                 <div class="skill-item">
-                                    <i class="fas fa-key skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Data Security</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-gavel skill-row-icon"></i>
+                                Ethical Decision-Making
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                        <!-- AI Tools & Applications-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">AI Tools & Applications</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-wand-magic-sparkles skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Generative AI</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-chalkboard-teacher skill-row-icon"></i>
+                                Presentation Skills
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-plug skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">AI Integration</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
+                        <li class="skill-row">
+                            <span class="skill-row-left">
+                                <i class="fas fa-users skill-row-icon"></i>
+                                Cross-functional Collaboration
+                            </span>
+                            <span class="skill-badge expert">Expert</span>
+                        </li>
+                        <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="100%"></div></div>
+                    </ul>
+                </div>
 
-                                <div class="skill-item">
-                                    <i class="fas fa-comment dots skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Prompt Engineering</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-microchip skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">AI-powered Analytics</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-gears skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Automation with AI</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Development & Integration-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Development & Integration</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-code-merge skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">API Integration</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Beginner</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-git-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">GIT/Version Control</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-globe skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Website Development</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <!-- Product & Project Management -->
-                <section id="product-project-management">
-                    <section class="skill-category">
-                        <div class="category-header">
-                            <div class="category-icon project-management">
-                                <i class="fas fa-tasks"></i>
-                            </div>
-                            <h2 class="category-title">Product & Project Management</h2>
-                        </div>
-                        
-                        <!-- Project Execution-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Project Execution</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-project-diagram skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">MS Project</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-check-circle skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Asana</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-calendar-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Project Planning</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-clock skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Schedule Management</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-users-cog skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Agile & Scrum Methodologies</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-flag-checkered skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Product Development</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Monitoring & Evaluation -->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Monitoring & Evaluation</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-clipboard-check skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">M&E Frameworks</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-dollar-sign skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Budget Control</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-bullseye skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Impact Assessment</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-tachometer-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">KPI Tracking</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Stakeholder Collaboration-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Stakeholder Collaboration</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-users skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Stakeholder Management</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-handshake skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Negotiation</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-file-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Reporting</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <!-- Climate & Sustainability-->
-                <section id="climate-sustainability">
-                    <section class="skill-category">
-                        <div class="category-header">
-                            <div class="category-icon sustainability">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <h2 class="category-title">Climate & Sustainability </h2>
-                        </div>
-                        
-                        <!-- climate Action-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Climate Action</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-globe-africa skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Climate Governance</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-temperature-high skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Climate Change Adaptation</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-dollar-sign skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Carbon Pricing</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Intermediate</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-smog skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Carbon Risk Assessment</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sustainability Practices-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Sustainability Practices</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-solar-panel skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Renewable Energy</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-seedling skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Green Investments</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Intermediate</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-recycle skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Circular Economy</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-th-large skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Sustainability Metrics</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Corporate Responsibility-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Corporate Responsibility</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-hands-helping skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Corporate Social Responsibility</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-file-contract skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">ESG Reporting</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-search skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Environmental Auditing</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <!-- Leadership & Professional Development  -->
-                <section id="leadership-professional-development">
-                    <section class="skill-category">
-                        <div class="category-header">
-                            <div class="category-icon leadership">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h2 class="category-title">Leadership & Professional Development</h2>
-                        </div>
-                        
-                        <!-- Leadership & Strategy-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Leadership & Strategy</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-crown skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Leadership</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-chess skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Strategic Planning</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-sync-alt skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Change Management</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Innovation & Problem Solving-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Innovation & Problem Solving</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-lightbulb skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Innovation</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <p class="skill-level">Advanced</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-puzzle-piece skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Critical Thinking</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                 <div class="skill-item">
-                                    <i class="fas fa-gavel skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Ethical Decision-Making</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Communication-->
-                        <div class="subcategory">
-                            <h3 class="subcategory-title">Communication</h3>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fas fa-chalkboard-teacher skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Presentation Skills</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <i class="fas fa-users skill-icon"></i>
-                                    <div class="skill-info">
-                                        <h3 class="skill-name">Cross-functional Collaboration</h3>
-                                        <div class="skill-dots">
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                            <span class="dot filled"></span>
-                                        </div>
-                                        <p class="skill-level">Expert</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
             </div>
+            <!-- end .skills-cards-grid -->
         </div>
+        <!-- end .skills-page -->
 
         <!-- Footer -->
         <footer>
@@ -1299,33 +723,50 @@
                             <div class="social-links-wrapper">
                                 <a href="mailto:wambuifaith2@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
                                 <a href="https://www.linkedin.com/in/ms-faith-wambui" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://wa.me/254714293432" class="social-link" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>                
+                                <a href="https://wa.me/254714293432" class="social-link" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
                                 <a href="tel:+254714293432" class="social-link" title="Phone"><i class="fas fa-phone"></i></a>
                             </div>
-                        </div> 
-                            <p class="location-text"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
-                            <div class="badge-wrapper">
+                        </div>
+                        <p class="location-text"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                        <div class="badge-wrapper">
                             <span class="availability-badge">
                                 <span class="badge-dot"></span>
                                 Open to opportunities
                             </span>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-                <div class="footer-bottom">
-                    <p>© 2026 | Faith Wambui. Built with <span class="heart">♥</span> and lots of tea.</p>
-                        <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-                
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l-10 10h6v10h8v-10h6z"/></svg>
-                        </button>
-                </div>
+            <div class="footer-bottom">
+                <p>© 2026 | Faith Wambui. Built with <span class="heart">♥</span> and lots of tea.</p>
+                <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l-10 10h6v10h8v-10h6z"/></svg>
+                </button>
             </div>
         </footer>
     </main>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
+
+    <!-- Animate skill bars on scroll -->
+    <script>
+        const bars = document.querySelectorAll('.skill-bar-fill');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    el.style.width = el.getAttribute('data-width');
+                    observer.unobserve(el);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        bars.forEach(bar => {
+            bar.style.width = '0%';
+            observer.observe(bar);
+        });
+    </script>
 </body>
 </html>
