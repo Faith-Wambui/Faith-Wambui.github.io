@@ -256,6 +256,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // Hamburger menu — place this directly inside the second DOMContentLoaded block
+const hamburger = document.getElementById('hamburger');
+const navLinksMenu = document.getElementById('navLinks');  // renamed to avoid conflict
+
+if (hamburger && navLinksMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navLinksMenu.classList.toggle('open');
+    });
+
+    navLinksMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            navLinksMenu.classList.remove('open');
+        });
+    });
+}
     // ============================================================================
     // === SCROLL TO TOP ===
     // ============================================================================
