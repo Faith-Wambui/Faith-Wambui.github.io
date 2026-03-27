@@ -7,9 +7,9 @@
    =================================== */
 
 .skills-page {
-    padding: 3rem 2rem 4rem;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
     width: 100%;
 }
 
@@ -20,6 +20,7 @@
 .page-header {
     text-align: center;
     margin-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 .page-title {
@@ -110,13 +111,15 @@
 .card-icon {
     width: 48px;
     height: 48px;
-    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
-    color: white;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 50% !important;
     flex-shrink: 0;
+    font-size: 1.2rem;
+    color: white;
     transition: transform var(--transition-medium);
 }
 
@@ -203,25 +206,25 @@
 }
 
 .skill-badge.expert {
-    background: rgba(16, 185, 129, 0.12);
-    color: #10b981;
-    border: 1px solid rgba(16, 185, 129, 0.3);
-}
-
-.skill-badge.advanced {
-    background: rgba(91, 127, 255, 0.12);
-    color: var(--royal-blue);
-    border: 1px solid rgba(91, 127, 255, 0.3);
-}
-
-.skill-badge.proficient {
     background: rgba(247, 108, 0, 0.10);
     color: var(--orange);
     border: 1px solid rgba(247, 108, 0, 0.25);
 }
 
+.skill-badge.advanced {
+   background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.skill-badge.proficient {
+    background:rgba(91, 127, 255, 0.12);
+    color: var(--royal-blue);
+    border: 1px solid rgba(91, 127, 255, 0.3);
+}
+
 .skill-badge.intermediate {
-    background: rgba(148, 163, 184, 0.12);
+    background:rgba(91, 127, 255, 0.12);
     color: var(--text-secondary);
     border: 1px solid rgba(148, 163, 184, 0.3);
 }
@@ -249,7 +252,7 @@
     height: 100%;
     width: 0%;                              /* starts at 0; JS animates it */
     border-radius: 10px;
-    background: linear-gradient(90deg, var(--royal-blue), var(--orange));
+    background: linear-gradient(90deg, var(--royal-blue), #5b7fff);
     transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;

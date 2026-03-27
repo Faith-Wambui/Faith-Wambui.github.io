@@ -7,6 +7,7 @@
     max-width: 100%;
     margin: 0;
     width: 100%;
+    
 }
 
 /* ===================================
@@ -54,11 +55,16 @@
 .page-header {
     text-align: center;
     margin-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 .page-header .category-icon {
-    width: 80px;
-    height: 80px;
+    width: 56px  !important;
+    height: 56px !important;
+    min-width: 56px;
+    min-height: 56px;
+    border-radius: 50% !important;
+    flex-shrink: 0;
     background: linear-gradient(135deg, var(--royal-blue), #5b21b6);
     border-radius: 50%;
     display: flex;
@@ -71,7 +77,7 @@
 
 .page-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3rem) !important;
     font-weight: 900;
     color: var(--text-primary);
     margin-bottom: 1rem;
@@ -92,7 +98,7 @@
 }
 
 .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;;
     color: var(--text-secondary);
     margin-top: 1.5rem;
     margin-left: auto;
@@ -123,8 +129,12 @@
 }
 
 .category-icon {
-    width: 70px;
-    height: 70px;
+    width: 56px  !important;
+    height: 56px !important;
+    min-width: 56px;
+    min-height: 56px;
+    border-radius: 50% !important;
+    flex-shrink: 0;
     background: linear-gradient(135deg, var(--royal-blue), #5b21b6);
     border-radius: 50%;
     display: flex;
@@ -212,21 +222,19 @@
 
 .project-image {
     width: 100%;
-    height: 220px;
+    height: 200px;
     overflow: hidden;
-    background: var(--bg-tertiary);
-    position: relative;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transition: transform var(--transition-slow);
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .project-overlay {
@@ -352,11 +360,7 @@
 
 @media (max-width: 768px) {
     .projects-page {
-        padding: 1.5rem 1rem;
-    }
-
-    .page-header {
-        margin-bottom: 2rem;
+        padding: 1.5rem ;
     }
 
     .category-header {
@@ -369,10 +373,15 @@
     }
 
     .category-icon {
-        width: 60px;
-        height: 60px;
+
         font-size: 1.8rem;
+        width: 48px  !important;
+        height: 48px !important;
+        min-width: 48px;
+        min-height: 48px;
+        border-radius: 50% !important;
     }
+    
 
     .category-title {
         font-size: 1.5rem;
@@ -393,7 +402,9 @@
     }
 
     .project-image {
+        width: 100%;
         height: 200px;
+        overflow: hidden;
     }
 
     .project-content {

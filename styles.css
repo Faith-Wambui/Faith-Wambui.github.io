@@ -157,6 +157,8 @@ html {
     gap: 1rem;
     padding-left: 55px;
     min-height: 45px;
+    flex-shrink: 0;          /* don't let it collapse */
+    min-width: 0;
 }
 
 .logo-image {
@@ -185,6 +187,10 @@ html {
     font-weight: 700;
     color: var(--text-accent);
     letter-spacing: -0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(0.85rem, 2vw, 1.4rem);
 }
 
 /* ===================================
@@ -423,8 +429,14 @@ html {
 
 @media (max-width: 480px) {
     .logo-image {
-        width: 38px;
-        height: 38px;
+        width: 34px;
+        height: 34px;
+    }
+    .navbar-logo {
+        padding-left: 44px;
+    }
+     .logo-text {
+        font-size: 0.85rem;
     }
 
     .theme-toggle,
@@ -458,7 +470,7 @@ html {
 
 .hero-section {
     background: var(--bg-tertiary);
-    padding: 4rem 2rem 3rem;
+    padding: 2rem 2rem 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -487,7 +499,7 @@ html {
 
 .hero-greeting {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
     font-weight: 900;
     margin-bottom: 0.8rem;
     color: var(--text-primary);
@@ -496,7 +508,7 @@ html {
 }
 
 .hero-name {
-    color: var(--text-primary);
+    color: var(--orange);
     position: relative;
     display: inline-block;
 }
@@ -529,7 +541,7 @@ html {
     max-width: 900px;
     margin: 0 auto 2rem;
     color: var(--text-secondary);
-    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    font-size: clamp(0.88rem, 1.6vw, 0.98rem);
     line-height: 1.7;
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
@@ -566,8 +578,9 @@ html {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px var(--shadow-heavy);
+    box-shadow: 0 8px 25px var(--shadow-light);
     background: var(--navy);
+    color:var(--orange);
 }
 
 .btn-secondary {
@@ -628,7 +641,7 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
 
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-size: clamp(1.4rem, 3vw, 2rem);
     font-weight: 900;
     color: var(--text-primary);
     margin-bottom: 0.8rem;
@@ -649,7 +662,7 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
 }
 
 .section-subtitle {
-    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    font-size: clamp(0.88rem, 1.6vw, 0.98rem);
     color: var(--text-secondary);
     max-width: 700px;
     margin: 1.5rem auto 0;
@@ -674,6 +687,7 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
     border: 2px solid var(--border-color);
     transition: all var(--transition-slow);
     cursor: pointer;
+    
 }
 
 .project-card:hover {
@@ -685,18 +699,17 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
     width: 100%;
     height: 200px;
     overflow: hidden;
-    background: var(--bg-tertiary);
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transition: transform var(--transition-slow);
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .project-content {
@@ -704,7 +717,7 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
 }
 
 .project-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 0.8rem;
@@ -924,11 +937,7 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
     display: flex;
     align-items: center;
     gap: 1rem;
-}
 
-.resume-icon {
-    font-size: 2.5rem;
-    color: var(--royal-blue);
 }
 
 .resume-details h3 {
@@ -961,8 +970,9 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
 
 .download-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px var(--shadow-heavy);
+    box-shadow: 0 8px 25px var(--shadow-light);
     background: var(--navy);
+    color: var(--orange);
 }
 
 /* ===================================
@@ -1178,7 +1188,7 @@ footer {
 }
 
 .footer-heading {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--text-primary);
     margin-bottom: 1.5rem;
     font-family: 'Playfair Display', serif;
@@ -1208,18 +1218,24 @@ footer {
 }
 
 .scroll-top {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px;
+    min-height: 40px;
+    flex-shrink: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-tertiary);
     border: 2px solid var(--border-color);
-    border-radius: 50%;
+    border-radius: 50% !important;
     position: static;
     color: var(--text-primary);
     cursor: pointer;
     transition: all var(--transition-medium);
+    
+    
 }
 
 .scroll-top svg {
@@ -1365,128 +1381,6 @@ footer {
     text-align: center;
 }
 
-/* ===================================
-   TIMELINE
-   =================================== */
-
-.timeline-container {
-    position: relative;
-    padding: 2rem 0;
-}
-
-.timeline-line {
-    position: absolute;
-    left: 30px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, var(--royal-blue), var(--navy));
-}
-
-.timeline-item {
-    position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 3rem;
-    opacity: 0;
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-.timeline-item:nth-child(1) { animation-delay: 0.1s; }
-.timeline-item:nth-child(2) { animation-delay: 0.2s; }
-.timeline-item:nth-child(3) { animation-delay: 0.3s; }
-.timeline-item:nth-child(4) { animation-delay: 0.4s; }
-.timeline-item:nth-child(5) { animation-delay: 0.5s; }
-
-.timeline-dot {
-    position: absolute;
-    left: 19px;
-    top: 8px;
-    width: 24px;
-    height: 24px;
-    background: var(--card-bg);
-    border: 3px solid var(--royal-blue);
-    border-radius: 50%;
-    z-index: 2;
-    transition: all var(--transition-medium);
-}
-
-.timeline-item:hover .timeline-dot {
-    transform: scale(1.3);
-    box-shadow: 0 0 0 8px rgba(247, 108, 0, 0.1);
-}
-
-.timeline-content {
-    background: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 12px;
-    border: 2px solid var(--border-color);
-    transition: all var(--transition-medium);
-    box-shadow: 0 2px 8px var(--shadow-light);
-}
-
-.timeline-item:hover .timeline-content {
-    transform: translateX(5px);
-    border-color: var(--royal-blue);
-    box-shadow: 0 4px 16px var(--shadow-medium);
-}
-
-.timeline-date {
-    display: inline-block;
-    background: rgba(24, 0, 173, 0.1);
-    color: var(--royal-blue);
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(24, 0, 173, 0.2);
-}
-
-[data-theme="dark"] .timeline-date {
-    background: rgba(91, 127, 255, 0.15);
-    border-color: rgba(91, 127, 255, 0.3);
-}
-
-.timeline-role {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.timeline-company {
-    font-size: 1.1rem;
-    color: var(--royal-blue);
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.timeline-location {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .timeline-line { left: 20px; }
-
-    .timeline-dot {
-        left: 9px;
-        width: 20px;
-        height: 20px;
-    }
-
-    .timeline-item  { padding-left: 60px; }
-    .timeline-role  { font-size: 1.2rem; }
-    .timeline-company { font-size: 1rem; }
-}
 
 /* ===================================
    PAGE HEADER (experience / education
@@ -1501,18 +1395,18 @@ footer {
 
 .page-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 .page-title {
-    font-family: 'Playfair Display', serif;
+     font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 900;
     color: var(--text-primary);
     margin-bottom: 1rem;
     position: relative;
     display: inline-block;
-    text-align: center;
 }
 
 .page-title::after {
@@ -1521,16 +1415,17 @@ footer {
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, var(--royal-blue), var(--orange));
+    background: var(--orange);
     border-radius: 2px;
 }
 
 .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;;
     color: var(--text-secondary);
     margin-top: 1.5rem;
+    text-align: center;
 }
 
 /* ===================================

@@ -5,9 +5,11 @@
    =================================== */
 
 .blog-page {
-    padding: 2rem 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 
@@ -18,6 +20,7 @@
 .page-header {
     text-align: center;
     margin-bottom: 3rem;
+    padding-top: 1rem;
   
 }
 
@@ -44,7 +47,7 @@
 }
 
 .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;;
     color: var(--text-secondary);
     margin-top: 1.5rem;
     max-width: 800px;
@@ -174,20 +177,19 @@
 .insight-image {
     width: 100%;
     height: 200px;
-    background: var(--bg-tertiary);
     overflow: hidden;
-    position: relative;
+   
 }
 
 .insight-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transition: transform var(--transition-slow);
 }
 
 .insight-card:hover .insight-image img {
-    transform: scale(1.08);
+    transform: scale(1.02);
 }
 
 /* ===================================

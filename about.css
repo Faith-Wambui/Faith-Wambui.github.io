@@ -7,6 +7,7 @@
     max-width: 100%;
     margin: 0;
     width: 100%;
+
 }
 
 /* ===================================
@@ -16,17 +17,17 @@
 .about-hero {
     background: var(--bg-secondary);
     width: 100%;
-    padding: 4rem 0;
+    padding: 6rem -1rem;
 }
 
 .about-hero-inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2.5rem;
+    padding: 0 7rem;
     display: grid;
     grid-template-columns: 340px 1fr;
-    gap: 4rem;
-    align-items: start;
+    gap: 2rem;
+    align-items: center;
 }
 
 /* ===================================
@@ -35,16 +36,16 @@
 
 .hero-photo-col {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .profile-pic {
     width: 100%;
-    max-width: 320px;
-    aspect-ratio: 3 / 4;
+    max-width: 340px;
+    aspect-ratio: 3 /4 ;
     object-fit: cover;
     object-position: top;
-    border-radius: 16px;
+    border-radius: 50%;
     border: 3px solid var(--border-color);
     box-shadow: 0 8px 30px var(--shadow-medium);
     transition: all var(--transition-medium);
@@ -56,6 +57,7 @@
     box-shadow: 0 12px 40px var(--shadow-heavy);
 }
 
+
 /* ===================================
    TEXT COLUMN
    =================================== */
@@ -63,8 +65,8 @@
 .hero-text-col {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 0.5rem;
+    justify-content: center;
+    
 }
 
 .hero-label {
@@ -74,20 +76,22 @@
     letter-spacing: 0.12em;
     color: var(--orange);
     margin-bottom: 0.6rem;
+    margin: 0 0 2rem 0;
 }
 
 .hero-heading {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 800;
     color: var(--text-primary);
     line-height: 1.15;
     margin-bottom: 1.5rem;
+    margin: 0 0 2rem 0;
 }
 
 .hero-tagline {
-    border-left: 4px solid var(--royal-blue);
-    padding: 0.6rem 0 0.6rem 1.2rem;
+    
+    padding: 0.6rem 0rem;
     margin: 0 0 2rem 0;
     font-style: italic;
     font-size: 1.15rem;
@@ -123,9 +127,9 @@
 }
 
 .intro-text {
-    font-size: 1.05rem;
+    font-size:clamp(0.88rem, 1.6vw, 0.98rem);
     margin-bottom: 1.5rem;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     line-height: 1.8;
 }
 
@@ -308,7 +312,7 @@
 
 .interest-tag {
     background: var(--bg-tertiary);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     border: 2px solid var(--border-color);
     border-radius: 12px;
     padding: 0.8rem 1.8rem;
@@ -335,6 +339,20 @@
    =================================== */
 
 @media (max-width: 768px) {
+
+    .about-hero-inner {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 0 1.5rem !important;
+    }
+
+    .hero-photo-col {
+        justify-content: center !important;
+
+    }
+
+    .interest-tag {
+        width: 100% !important;
+    }
     .about-page {
         padding: 0;
     }
@@ -354,8 +372,9 @@
     }
 
     .profile-pic {
-        width: 120px;
-        height: 120px;
+        width: 100%;
+        max-width: 320px;
+        aspect-ratio: 3 / 4;
     }
 
     .profile-name {
@@ -402,11 +421,20 @@
 }
 
 @media (max-width: 480px) {
+    
     #profile-section,
     #background-section,
     #what-i-do-section,
     #interests-section {
         padding: 2rem 0;
+    }
+    .hero-photo-col {
+        justify-content: center !important;
+    }
+     .about-hero-inner {
+        grid-template-columns:repeat(2, 1fr) !important;
+        padding: 0 1rem !important;
+        gap: 1.5rem !important;
     }
 
     .profile-section {
@@ -420,8 +448,9 @@
     }
 
     .profile-pic {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        max-width: 320px;
+        aspect-ratio: 3 / 4;
     }
 
     .profile-name {

@@ -16,6 +16,7 @@
 .page-header {
     text-align: center;
     margin-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 .page-title {
@@ -41,7 +42,7 @@
 }
 
 .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;;
     color: var(--text-secondary);
     margin-top: 1.5rem;
     background: transparent;

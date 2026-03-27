@@ -3,9 +3,9 @@
    =================================== */
 
 .contact-page {
-    padding: 02.5rem;
+    padding: 0;
     max-width: 100%;
-    margin: 1 rem;
+    margin: 0;
     width: 100%;
 }
 
@@ -16,6 +16,7 @@
 .page-header {
     text-align: center;
     margin-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 .page-title {
@@ -41,7 +42,7 @@
 }
 
 .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;;
     color: var(--text-secondary);
     margin-top: 1.5rem;
     max-width: 700px;
@@ -208,18 +209,28 @@
 
 /* Availability Card */
 .availability-card {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: var(--bg-tertiary);
-  border: 1px solid var(--royal-blue);
-  border-radius: 10px;
+ margin: 2rem auto;        /* auto left/right centres it */
+ padding: 1.5rem;
+ background-color: var(--card-bg);
+ border: 2px solid var(--border-color);
+ box-shadow: 0 4px 12px var(--shadow-light);
+ transition: all var(--transition-medium);
+ border-radius: 12px;
+ width: 600px;
+ height:fit-content;
+ max-width: 100%;          /* prevents overflow on mobile */
+  
+}
+.availability-card:hover{
+    box-shadow: 0 8px 20px var(--shadow-medium);
+    border-color: var(--royal-blue);
 }
 
 .availability-status {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  margin-bottom: 0.5rem;
+  
   
 }
 
@@ -229,16 +240,19 @@
   background-color: #10B981;
   border-radius: 50%;
   animation: pulse 2s infinite;
+  margin-bottom: 1rem;
 }
 
 .status-text {
   font-weight: 600;
   color:#10B981 ;
+  margin-bottom: 1rem;
 }
 
 .availability-note {
   font-size: 0.875rem;
   color: var(--text-secondary);
+  align-items: center;
 }
 
 @keyframes pulse {
