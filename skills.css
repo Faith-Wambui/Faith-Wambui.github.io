@@ -123,10 +123,12 @@
     color: white;
     transition: transform var(--transition-medium);
     background: var(--royal-blue);
-}
 
+}
 .skill-card:hover .card-icon {
     transform: scale(1.1) rotate(5deg);
+    background:var(--orange) ;
+    
 }
 
 .card-title {
