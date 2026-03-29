@@ -122,22 +122,12 @@
     font-size: 1.2rem;
     color: white;
     transition: transform var(--transition-medium);
+    background: var(--royal-blue);
 }
 
 .skill-card:hover .card-icon {
     transform: scale(1.1) rotate(5deg);
 }
-
-/* Icon colour themes */
-.card-icon.data-analytics    { background: linear-gradient(135deg, #1800ad, #5b21b6); }
-.card-icon.research           { background: linear-gradient(135deg, #0ea5e9, #0369a1); }
-.card-icon.governance         { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
-.card-icon.engineering        { background: linear-gradient(135deg, #475569, #334155); }
-.card-icon.ai-tech            { background: linear-gradient(135deg, #f76c00, #ea580c); }
-.card-icon.development        { background: linear-gradient(135deg, #0891b2, #0e7490); }
-.card-icon.project-management { background: linear-gradient(135deg, #10b981, #059669); }
-.card-icon.sustainability     { background: linear-gradient(135deg, #16a34a, #15803d); }
-.card-icon.leadership         { background: linear-gradient(135deg, #9333ea, #7c3aed); }
 
 .card-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
