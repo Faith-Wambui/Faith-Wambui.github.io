@@ -34,6 +34,7 @@
     --light-gray: #f0f1f5;
     --text-light: #ffffff;
     --text-dark: #333333;
+    --green:green;
     
     /* Light Theme Variables */
     --bg-primary: #ffffff;
@@ -72,6 +73,7 @@
     --shadow-heavy: rgba(91, 127, 255, 0.2);
     --royal-blue: #5b7fff;
     --orange: #ff8c42;
+    --green:#10b981;
 }
 
 /* ===================================
@@ -125,7 +127,7 @@ html {
    =================================== */
 
 .top-navbar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
@@ -459,9 +461,10 @@ html {
 
 .main-content {
     margin-left: 0;
-    margin-top: var(--top-nav-height);
+    margin-top: 0;  /* changed from var(--top-nav-height) */
     min-height: calc(100vh - var(--top-nav-height));
     transition: margin-left var(--transition-medium);
+    
 }
 
 /* ===================================
@@ -579,7 +582,8 @@ html {
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px var(--shadow-light);
-    background: var(--navy);
+    border-color: var(--orange);
+    background: transparent;
     color:var(--orange);
 }
 
@@ -971,7 +975,7 @@ section:nth-child(odd)  { background: var(--bg-secondary); }
 .download-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px var(--shadow-light);
-    background: var(--navy);
+    background: transparent;
     color: var(--orange);
 }
 
@@ -1263,15 +1267,16 @@ footer {
     padding: 0.5rem 1rem;
     background-color: rgba(0, 128, 0, 0.10);
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 500;
-    color: #10B981;
+    color: var(--green);
+    font-style: italic;
 }
 
 .badge-dot {
     width: 10px;
     height: 10px;
-    background-color: #10B981;
+    background-color: var(--green);
     border-radius: 50%;
     animation: pulse 2s infinite;
 }
@@ -1381,7 +1386,6 @@ footer {
     text-align: center;
 }
 
-
 /* ===================================
    PAGE HEADER (experience / education
    standalone pages)
@@ -1394,9 +1398,12 @@ footer {
 }
 
 .page-header {
-    text-align: center;
+   text-align: center;
     margin-bottom: 3rem;
-    padding-top: 1rem;
+    /* This pushes the header down far enough to be seen below the nav */
+    padding-top: calc(var(--top-nav-height) + 2rem); 
+    position: relative;
+    z-index: 1; /* Keep this lower than the navbar's 10000 */
 }
 
 .page-title {

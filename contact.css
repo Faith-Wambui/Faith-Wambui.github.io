@@ -3,7 +3,7 @@
    =================================== */
 
 .contact-page {
-    padding: 0;
+    padding: 0 1rem 0 1rem;
     max-width: 100%;
     margin: 0;
     width: 100%;
@@ -237,7 +237,7 @@
 .status-dot {
   width: 10px;
   height: 10px;
-  background-color: #10B981;
+  background-color: var(--green);
   border-radius: 50%;
   animation: pulse 2s infinite;
   margin-bottom: 1rem;
@@ -245,7 +245,7 @@
 
 .status-text {
   font-weight: 600;
-  color:#10B981 ;
+  color:var(--green) ;
   margin-bottom: 1rem;
 }
 
@@ -360,7 +360,10 @@
 
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px var(--shadow-heavy);
+    box-shadow: 0 8px 25px var(--shadow-light);
+    border-color: var(--royal-blue);
+    background: transparent;
+    color:var(--royal-blue);
 }
 
 .submit-btn:active {
@@ -373,7 +376,7 @@
 
 .form-success {
     background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
-    border: 2px solid #10b981;
+    border: 2px solid var(--green);
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
@@ -382,7 +385,7 @@
 
 .form-success i {
     font-size: 3rem;
-    color: #10b981;
+    color: var(--green);
     margin-bottom: 1rem;
 }
 

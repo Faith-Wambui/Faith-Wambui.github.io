@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (filterValue === 'all') {
                         card.style.display = 'flex';
                         // Add fade-in animation
-                        card.style.animation = 'fadeIn 0.5s ease';
+                        card.style.animation = 'cardFadeIn 0.5s ease';
                     } else if (cardType === filterValue) {
                         card.style.display = 'flex';
-                        card.style.animation = 'fadeIn 0.5s ease';
+                        card.style.animation = 'cardfadeIn 0.5s ease';
                     } else {
                         card.style.display = 'none';
                     }
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add CSS for fade-in animation
         const style = document.createElement('style');
         style.textContent = `
-            @keyframes fadeIn {
+            @keyframes cardfadeIn {
                 from {
                     opacity: 0;
                     transform: translateY(10px);

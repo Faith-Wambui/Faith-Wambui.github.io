@@ -7,8 +7,7 @@
 .blog-page {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0;
-    margin: 0;
+    padding: 0 1rem 4rem 1rem;
     width: 100%;
 }
 
@@ -89,7 +88,7 @@
 .filter-tag[data-filter="all"]:hover,
 .filter-tag[data-filter="all"].active {
     background: var(--text-primary);
-    color: black;
+    color: var(--bg-primary);
     border-color: var(--text-primary);
 }
 /* Articles - Royal Blue */
@@ -105,14 +104,14 @@
 }
 /* Posts - Green */
 .filter-tag[data-filter="post"] {
-    color: green ;
-    border-color: green;
+    color: var(--green) ;
+    border-color: var(--green);
 }
 .filter-tag[data-filter="post"]:hover,
 .filter-tag[data-filter="post"].active {
-    background: green;
+    background: var(--green);
     color: white;
-    border-color:green;
+    border-color:var(--green);
 }
 /* Infographics - Orange */
 .filter-tag[data-filter="infographic"] {
@@ -215,7 +214,7 @@
 }
 
 .content-type.post {
-    background: green;
+    background: var(--green);
     color: white;
 }
 

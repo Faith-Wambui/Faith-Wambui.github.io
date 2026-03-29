@@ -12,21 +12,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="projects.css">
 </head>
-
 <body>
-       <!-- Top Navbar -->
+    <!-- Top Navbar -->
     <nav class="top-navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-
-                <!-- Light theme logo -->
                 <img src="assets/images/logo.png" alt="FW Logo" class="logo-image light-logo">
-                <!-- Dark theme logo -->
                 <img src="assets/images/dark_logo.png" alt="FW Logo" class="logo-image dark-logo">
                 <span class="logo-text">Faith Wambui | Portfolio</span>
             </div>
-              <!-- Nav Links -->
-        <div class="nav-links" id="navLinks">
+            <div class="nav-links" id="navLinks">
                 <ul class="quick-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
@@ -37,235 +32,267 @@
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-             </div>
-            <!-- Right side: theme toggle + hamburger -->
+            </div>
             <div class="navbar-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
                 </button>
-
                 <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
-
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
         <div class="projects-page">
+
             <!-- Page Header -->
             <div class="page-header">
                 <h1 class="page-title">My Projects</h1>
-                <p class="page-subtitle">Showcasing my work across Data Analytics, AI Automation, and Project Management</p>
+                <p class="page-subtitle">Showcasing my work across Data Analytics, AI & Automation, Data Governance, Data Collection, and Project Management</p>
             </div>
 
-           <!-- Data Analytics Category -->
-            <section id="data-analytics">
-                <section class="category-section">
-                    <div class="category-header">
-                        <div class="category-info">
-                            <div class="category-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div>
-                                <h2 class="category-title">Data Analytics</h2>
-                                <p class="category-description">Transforming raw data into actionable insights through visualization and analysis</p>
-                            </div>
-                        </div>
-                        <a href="projects-data-analytics.html" class="view-all-link">
-                            View All <i class="fas fa-arrow-right"></i>
-                        </a>
+            <!-- Filter Tags -->
+            <div class="filter-section">
+                <div class="filter-tags">
+                    <button class="filter-tag active" data-filter="all">All</button>
+                    <button class="filter-tag" data-filter="data-collection">Data Collection & Research</button>
+                    <button class="filter-tag" data-filter="data-analytics">Data Analytics</button>
+                    <button class="filter-tag" data-filter="data-governance">Data Governance</button>
+                    <button class="filter-tag" data-filter="ai-automation">AI & Automation</button>
+                    <button class="filter-tag" data-filter="project-management">Project & Product Management</button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- ★ FEATURED: Climate IQ - AI & Automation -->
+                <div class="project-card featured" data-category="ai-automation">
+                    <div class="project-image">
+                        <img src="assets/projects/AI & Automation/climateIQ.png" alt="Climate IQ">
+                        <span class="category-badge ai-automation">AI & Automation</span>
+                        <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
                     </div>
-
-                    <div class="projects-grid">
-                        <!-- Project 1-Carbon removal -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="assets/projects/Carbon Removal/carbon removal.png" alt="Carbon Removal Analysis">
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Global Carbon Removal Analysis</h3>
-                                <p class="project-description">
-                                    Comprehensive analysis of carbon removal projects worldwide, highlighting operational status and development potential using Tableau.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Tableau</span>
-                                    <span class="tech-tag">Data Analysis</span>
-                                    <span class="tech-tag">Visualization</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://public.tableau.com/views/GlobalCarbonRemovalProjectsDashboard/GLOBALCARBONREMOVALDASHBOARD?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="project-link"><i class="fas fa-chart-bar"></i> Tableau</a>
-                                    <a href="https://faith-wambui.github.io/Global-Carbon-Removal/" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                                    <a href="https://www.linkedin.com/pulse/race-clean-our-air-deep-dive-global-carbon-removal-projects-wambui-wzlsf/?trackingId=mI2hfJomXd5FBIZbeqrIfA%3D%3D" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                                </div>
-                            </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2025</span>
                         </div>
-
-                        <!-- Project 2- Renewable Energy -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="assets/projects/Ren En/Ren En.png" alt="Africa Energy Transition">
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Africa's Energy Transition 1990-2021</h3>
-                                <p class="project-description">
-                                    Exploring Africa's journey towards renewable energy adoption over three decades with strategic insights and data-driven recommendations.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Data Analysis</span>
-                                    <span class="tech-tag">Report Writing</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="assets/projects/Ren En/AFRICA'S TRANSITION TO SUSTAINABLE ENERGY 1990-2021.pdf" class="project-link"><i class="fas fa-file-alt"></i> Report</a>
-                                    <a href="assets/projects/Ren En/AFRICA'S TRANSITION TO SUSTAINABLE ENERGY 1990-2021.html" class="project-link"><i class="fab fa-python"></i> Jupyter</a>
-                                </div>
-                            </div>
+                        <h3 class="project-title">Climate IQ</h3>
+                        <p class="project-description">
+                            A fully automated AI pipeline that scrapes, classifies, summarizes, and delivers daily climate news — powered by Google Gemini AI.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Google Gemini AI</span>
+                            <span class="tech-tag">Web Scraping</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://climateiq-dashboard.onrender.com" class="project-link"><i class="fas fa-chart-bar"></i> Dashboard</a>
+                            <a href="https://github.com/Faith-Wambui/ClimateIQ" class="project-link"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
-                </section>
-            </section>
+                </div>
 
-            <!-- AI Automation Category -->
-            <section id="ai-automation">
-                <section class="category-section">
-                    <div class="category-header">
-                        <div class="category-info">
-                            <div class="category-icon ai">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div>
-                                <h2 class="category-title">AI Automation</h2>
-                                <p class="category-description">Leveraging artificial intelligence to streamline processes and enhance efficiency</p>
-                            </div>
-                        </div>
-                        <a href="projects-ai-automation.html" class="view-all-link">
-                            View All <i class="fas fa-arrow-right"></i>
-                        </a>
+                <!-- ★ FEATURED: DPro Template Library - Project Management -->
+                <div class="project-card featured" data-category="project-management">
+                    <div class="project-image">
+                        <img src="assets/projects/Product & Project Management/DPro.png" alt="DPro Template Library">
+                        <span class="category-badge project-management">Project Management</span>
+                        <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
                     </div>
-
-                    <div class="projects-grid">
-                       
-                        <!-- Project 1 -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="/assets/projects/AI & Automation/climateIQ.png" alt="Climate IQ">
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Climate IQ</h3>
-                                <p class="project-description">
-                                    A fully automated AI pipeline that scrapes, classifies, summarizes, and delivers daily climate news - powered by Google Gemini AI.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Google Gemini AI</span>
-                                    <span class="tech-tag">Web Scraping</span>
-                                    <span class="tech-tag">Automation</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://climateiq-dashboard.onrender.com" class="project-link"><i class="fas fa-chart-bar"></i> Dashboard</a>
-                                    <a href="https://github.com/Faith-Wambui/ClimateIQ" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                            </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2025</span>
                         </div>
-
-                        <!-- Project 2 - Data Governance -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop" alt="Automated Reporting System">
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">Interactive Data Governance Learning App with Gemini Canvas</h3>
-                                <p class="project-description">
-                                    Exploring AI's potential for education by building an interactive data governance learning platform with Gemini Canvas and Google AI Studio.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">AI Development</span>
-                                    <span class="tech-tag">Data Governance</span>
-                                    <span class="tech-tag">Ed Tech</span>
-                                    <span class="tech-tag">Interactive Learning</span>
-                                    <span class="tech-tag">AI Applications</span>
-                                
-
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://gemini.google.com/share/13a53f7e2be4" class="project-link"><i class="fas fa-laptop-code"></i> Demo</a>
-                                    <a href="https://www.linkedin.com/posts/ms-faith-wambui_alxabraisk-ai-innovation-activity-7352082370209923072-wbn7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA2YM7gBo2jckEkxkXUJmi-tvHNoJAptqTQ" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                                </div>
-                            </div>
+                        <h3 class="project-title">DPro Template Library</h3>
+                        <p class="project-description">
+                            A professional web platform for accessing Project Management, Program Management, and MEAL templates — built on PM4NGOs' DPro suite of guides.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MEAL</span>
+                            <span class="tech-tag">Project Management</span>
+                            <span class="tech-tag">Program Management</span>
+                            <span class="tech-tag">Web Development</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://faith-wambui.github.io/TemplateHub/" class="project-link"><i class="fas fa-external-link-alt"></i> Template Hub</a>
+                            <a href="https://github.com/Faith-Wambui/TemplateHub" class="project-link"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
-                </section>
-            </section>
+                </div>
 
-            <!-- Project Management Category -->
-            <section id="project-management">
-                <section class="category-section">
-                    <div class="category-header">
-                        <div class="category-info">
-                            <div class="category-icon pm">
-                                <i class="fas fa-tasks"></i>
-                            </div>
-                            <div>
-                                <h2 class="category-title">Project and Product Management</h2>
-                                <p class="category-description">Coordinating complex projects from inception to successful delivery</p>
-                            </div>
-                        </div>
-                        <a href="projects-management.html" class="view-all-link">
-                            View All <i class="fas fa-arrow-right"></i>
-                        </a>
+                <!-- Global Carbon Removal - Data Analytics -->
+                <div class="project-card" data-category="data-analytics">
+                    <div class="project-image">
+                        <img src="assets/projects/Carbon Removal/carbon removal.png" alt="Carbon Removal Analysis">
+                        <span class="category-badge data-analytics">Data Analytics</span>
                     </div>
-
-                    <div class="projects-grid">
-
-                        <!-- Project 1 -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="/assets/projects/Product & Project Management/DPro.png" alt="Carbon Removal Analysis">
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">DPro Template Library</h3>
-                                <p class="project-description">
-                                    A professional web platform for accessing Project Management, Program Management, and MEAL templates - built on PM4NGOs' DPro suite of guides.</p>
-                               <div class="project-tech">
-                                    <span class="tech-tag">MEAL</span>
-                                    <span class="tech-tag">Project Management</span>
-                                    <span class="tech-tag">Program Management</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://faith-wambui.github.io/TemplateHub/" class="project-link"><i class="fas fa-chart-bar"></i> Template Hub</a>
-                                    <a href="https://github.com/Faith-Wambui/TemplateHub" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                            </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2024</span>
                         </div>
-                        
-                        <!-- Project 2 - EWaste App-->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="assets/projects/AI & Automation/E Waste Prototype.jpg" alt="Construction Project">
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">E-Waste Recycling App: From Wireframes to Prototype</h3>
-                                <p class="project-description">
-                                    A complete design journey from concept to prototype for an e-waste recycling app by leveraging AI tools.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">MS Project</span>
-                                    <span class="tech-tag">Budget Management</span>
-                                    <span class="tech-tag">Stakeholder Engagement</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://v0.dev/chat/e-waste-recycling-app-nnazit9kKtU" class="project-link"><i class="fas fa-laptop-code"></i> App</a>
-                                    <a href="https://www.linkedin.com/posts/ms-faith-wambui_deepseek-stitch-figma-activity-7348815830853345280-SCi5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA2YM7gBo2jckEkxkXUJmi-tvHNoJAptqTQ" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                                </div>
-                            </div>
+                        <h3 class="project-title">Global Carbon Removal Analysis</h3>
+                        <p class="project-description">
+                            Comprehensive analysis of 844 carbon removal projects worldwide, highlighting operational status and development potential using Tableau.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://public.tableau.com/views/GlobalCarbonRemovalProjectsDashboard/GLOBALCARBONREMOVALDASHBOARD?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="project-link"><i class="fas fa-chart-bar"></i> Tableau</a>
+                            <a href="https://faith-wambui.github.io/Global-Carbon-Removal/" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/pulse/race-clean-our-air-deep-dive-global-carbon-removal-projects-wambui-wzlsf/?trackingId=mI2hfJomXd5FBIZbeqrIfA%3D%3D" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
-                </section>
-            </section>
+                </div>
+
+                <!-- Africa Energy Transition - Data Analytics -->
+                <div class="project-card" data-category="data-analytics">
+                    <div class="project-image">
+                        <img src="assets/projects/Ren En/Ren En.png" alt="Africa Energy Transition">
+                        <span class="category-badge data-analytics">Data Analytics</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2024</span>
+                        </div>
+                        <h3 class="project-title">Africa's Energy Transition 1990–2021</h3>
+                        <p class="project-description">
+                            Exploring Africa's journey towards renewable energy adoption over three decades with strategic insights and data-driven recommendations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Report Writing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assets/projects/Ren En/AFRICA'S TRANSITION TO SUSTAINABLE ENERGY 1990-2021.pdf" class="project-link"><i class="fas fa-file-alt"></i> Report</a>
+                            <a href="assets/projects/Ren En/AFRICA'S TRANSITION TO SUSTAINABLE ENERGY 1990-2021.html" class="project-link"><i class="fab fa-python"></i> Jupyter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Governance Learning App - AI & Automation + Data Governance -->
+                <div class="project-card" data-category="ai-automation">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop" alt="Data Governance Learning App">
+                        <span class="category-badge ai-automation">AI & Automation</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2025</span>
+                        </div>
+                        <h3 class="project-title">Interactive Data Governance Learning App</h3>
+                        <p class="project-description">
+                            Exploring AI's potential for education by building an interactive data governance learning platform with Gemini Canvas and Google AI Studio.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Gemini Canvas</span>
+                            <span class="tech-tag">Google AI Studio</span>
+                            <span class="tech-tag">Ed Tech</span>
+                            <span class="tech-tag">Data Governance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://gemini.google.com/share/13a53f7e2be4" class="project-link"><i class="fas fa-laptop-code"></i> Demo</a>
+                            <a href="https://www.linkedin.com/posts/ms-faith-wambui_alxabraisk-ai-innovation-activity-7352082370209923072-wbn7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA2YM7gBo2jckEkxkXUJmi-tvHNoJAptqTQ" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Waste Recycling App - Project Management -->
+                <div class="project-card" data-category="project-management">
+                    <div class="project-image">
+                        <img src="assets/projects/AI & Automation/E Waste Prototype.jpg" alt="E-Waste Recycling App">
+                        <span class="category-badge project-management">Project Management</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2025</span>
+                        </div>
+                        <h3 class="project-title">E-Waste Recycling App: From Wireframes to Prototype</h3>
+                        <p class="project-description">
+                            A complete design journey from concept to prototype for an e-waste recycling app by leveraging AI tools including DeepSeek, Stitch, and Figma.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Product Design</span>
+                            <span class="tech-tag">Prototyping</span>
+                            <span class="tech-tag">AI Tools</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://v0.dev/chat/e-waste-recycling-app-nnazit9kKtU" class="project-link"><i class="fas fa-laptop-code"></i> App</a>
+                            <a href="https://www.linkedin.com/posts/ms-faith-wambui_deepseek-stitch-figma-activity-7348815830853345280-SCi5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA2YM7gBo2jckEkxkXUJmi-tvHNoJAptqTQ" class="project-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder: Data Governance - coming soon -->
+                <div class="project-card coming-soon" data-category="data-governance">
+                    <div class="project-image placeholder-image">
+                        <div class="placeholder-content">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="category-badge data-governance">Data Governance</span>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2026</span>
+                        </div>
+                        <h3 class="project-title">Kenya Data Protection Act Compliance Framework</h3>
+                        <p class="project-description">
+                            A practical compliance framework mapping organizational data practices to the Kenya Data Protection Act 2019 requirements.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Data Governance</span>
+                            <span class="tech-tag">Policy Design</span>
+                            <span class="tech-tag">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder: Data Collection - coming soon -->
+                <div class="project-card coming-soon" data-category="data-collection">
+                    <div class="project-image placeholder-image">
+                        <div class="placeholder-content">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="category-badge data-collection">Data Collection</span>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-year"><i class="far fa-calendar"></i> 2026</span>
+                        </div>
+                        <h3 class="project-title">KoboToolbox Survey Design & Analysis</h3>
+                        <p class="project-description">
+                            End-to-end field data collection project using KoboToolbox — from questionnaire design to data cleaning and analysis.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">KoboToolbox</span>
+                            <span class="tech-tag">Survey Design</span>
+                            <span class="tech-tag">Data Collection</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No results message -->
+            <div class="no-results" id="noResults" style="display:none;">
+                <i class="fas fa-search"></i>
+                <p>No projects found in this category yet. Check back soon!</p>
+            </div>
+
         </div>
 
         <!-- Footer -->
@@ -278,34 +305,60 @@
                             <div class="social-links-wrapper">
                                 <a href="mailto:wambuifaith2@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
                                 <a href="https://www.linkedin.com/in/ms-faith-wambui" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://wa.me/254714293432" class="social-link" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>                
-                                <a href="tel:+254714293432" class="social-link" title="Phone"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/254714293432" class="social-link" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                               
                             </div>
-                        </div> 
-                            <p class="location-text"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
-                            <div class="badge-wrapper">
-                            
+                        </div>
+                        <p class="location-text"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                        <div class="badge-wrapper">
                             <span class="availability-badge">
-                             <span class="badge-dot"></span>
-                                Open to opportunities
+                                <span class="badge-dot"></span>
+                                 Open to opportunities across Africa and beyond.
                             </span>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-                <div class="footer-bottom">
-                    <p>© 2026 | Faith Wambui. Built with <span class="heart">♥</span> and lots of tea.</p>
-                        <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-                
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l-10 10h6v10h8v-10h6z"/></svg>
-                        </button>
-                </div>
+            <div class="footer-bottom">
+                <p>© 2026 | Faith Wambui. Built with <span class="heart">♥</span> and lots of tea.</p>
+                <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l-10 10h6v10h8v-10h6z"/></svg>
+                </button>
             </div>
         </footer>
     </main>
-    
-    <!-- Scripts -->
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
+    <script>
+        // Filter logic
+        const filterTags = document.querySelectorAll('.filter-tag');
+        const projectCards = document.querySelectorAll('.project-card');
+        const noResults = document.getElementById('noResults');
+
+        filterTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                // Update active state
+                filterTags.forEach(t => t.classList.remove('active'));
+                tag.classList.add('active');
+
+                const filter = tag.dataset.filter;
+                let visibleCount = 0;
+
+                projectCards.forEach(card => {
+                    const category = card.dataset.category;
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'flex';
+                        card.style.animation = 'fadeInUp 0.4s ease forwards';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                noResults.style.display = visibleCount === 0 ? 'flex' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>

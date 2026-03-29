@@ -11,6 +11,7 @@
     max-width: 100%;
     margin: 0;
     width: 100%;
+    padding: 0 1rem 4rem 1rem;
 }
 
 /* ===================================
@@ -213,7 +214,7 @@
 
 .skill-badge.advanced {
    background: rgba(16, 185, 129, 0.12);
-    color: #10b981;
+    color: var(--green);
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 

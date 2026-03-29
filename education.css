@@ -137,9 +137,9 @@
 }
 
 .education-icon {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--royal-blue), #5b21b6);
+    width: 60px;
+    height: 60px;
+    background: var(--royal-blue);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -255,8 +255,8 @@
 }
 
 .certificate-badge {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: linear-gradient(135deg, var(--orange), #ff8c42);
     border-radius: 50%;
     display: flex;
