@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 strings: [
                     "Data Analytics",
                     "Data Governance",
-                    "Climate Advocacy",
+                    "Sustainable Development",
                     "Business Intelligence",
                     "Impact Evaluation",
                     "AI-Powered Data Solutions"

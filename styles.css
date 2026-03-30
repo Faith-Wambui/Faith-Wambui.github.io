@@ -473,7 +473,7 @@ html {
 
 .hero-section {
     background: var(--bg-tertiary);
-    padding: 2rem 2rem 3rem;
+    padding: 0rem 2rem 0rem 2rem ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -522,6 +522,22 @@ html {
     margin-bottom: 1rem;
     font-weight: 700;
     animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+.wave {
+    display: inline-block;
+    animation: wave 1.5s infinite;
+    transform-origin: 70% 70%;
+    color: var(--orange);
+}
+
+@keyframes wave {
+    0%   { transform: rotate(0deg); }
+    15%  { transform: rotate(14deg); }
+    30%  { transform: rotate(-8deg); }
+    45%  { transform: rotate(14deg); }
+    60%  { transform: rotate(-4deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .hero-subtitle {
@@ -630,7 +646,7 @@ html {
    =================================== */
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem;
     width: 100%;
 }
 .section-inner {

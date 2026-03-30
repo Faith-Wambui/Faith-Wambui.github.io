@@ -96,8 +96,8 @@
     background: var(--card-bg);
     border-radius: 12px;
     width: 100%;
-    margin: 0 auto 2.5rem;
-    padding: 2.5rem;
+    margin: 0 auto;
+    padding: 0.5rem;
     box-shadow: 0 4px 15px var(--shadow-light);
     border: 2px solid var(--border-color);
     transition: all var(--transition-medium);
@@ -228,6 +228,7 @@
    =================================== */
 
 .certifications-section {
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
