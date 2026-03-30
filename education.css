@@ -377,7 +377,69 @@ transition: transform var(--transition-medium);
 transform: translateX(3px); 
 
 }
+/* ===================================
+   ALWAYS LEARNING CARD
+   =================================== */
 
+.always-learning-card {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 3rem;
+}
+
+.always-learning-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 15px var(--shadow-light);
+    transition: all var(--transition-medium);
+}
+
+.always-learning-inner:hover {
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    border-color: var(--royal-blue);
+}
+
+.always-learning-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(24, 0, 173, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.always-learning-icon i {
+    color: var(--royal-blue);
+    font-size: 1.3rem;
+}
+
+[data-theme="dark"] .always-learning-icon {
+    background: rgba(91, 127, 255, 0.15);
+}
+
+.always-learning-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.always-learning-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
 /* ===================================
    RESPONSIVE DESIGN
    =================================== */
