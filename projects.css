@@ -3,9 +3,8 @@
    =================================== */
 
 .projects-page {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 1rem 4rem 1rem;
+    max-width: 100%;
+    padding: 0 2rem 4rem 2rem;
     width: 100%;
 }
 
@@ -203,6 +202,15 @@
     border-color: var(--text-secondary);
 }
 
+.category-badge,
+.coming-soon-badge {
+    transform: translateY(-150%);
+    transition: transform var(--transition-medium);
+}
+.project-card:hover .coming-soon-badge,
+.project-card:hover .category-badge {
+    transform: translateY(0);
+}
 /* ===================================
    PROJECT IMAGE
    =================================== */

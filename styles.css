@@ -631,8 +631,12 @@ html {
 
 section {
     padding: 4rem 2rem;
+    width: 100%;
+}
+.section-inner {
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 
 section:nth-child(even) { background: var(--bg-primary); }

@@ -4,10 +4,10 @@
    BLOG PAGE SPECIFIC STYLES
    =================================== */
 
+
 .blog-page {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 1rem 4rem 1rem;
+    max-width: 100%;
+    padding: 0 2rem 4rem 2rem;
     width: 100%;
 }
 
@@ -191,6 +191,9 @@
     transform: scale(1.02);
 }
 
+.insight-card:hover .content-type {
+    transform: translateY(0);
+}
 /* ===================================
    CONTENT TYPE BADGE
    =================================== */
@@ -206,6 +209,8 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-150%);
+    transition: transform var(--transition-medium);
 }
 
 .content-type.article {

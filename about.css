@@ -42,10 +42,10 @@
 .profile-pic {
     width: 100%;
     max-width: 340px;
-    aspect-ratio: 3 /4 ;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     object-position: top;
-    border-radius: 50%;
+    border-radius: 16px;  /* was 50% */
     border: 3px solid var(--border-color);
     box-shadow: 0 8px 30px var(--shadow-medium);
     transition: all var(--transition-medium);
